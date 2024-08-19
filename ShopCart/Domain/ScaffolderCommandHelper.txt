@@ -1,0 +1,19 @@
+﻿Scaffold-DbContext "Data Source=localhost;Initial Catalog=ShopCart;Integrated Security=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -force -o Entities  -ContextDir DataContext -Context ShopCartContext
+
+
+ShopCart --- db name
+
+Entities -- foldername where to save
+
+DataContext - folder context saved name
+
+ShopCartContext - class name of context
+
+if u want to specife table names
+Scaffold-DbContext "Data Source=localhost;Initial Catalog=ShopCart;Integrated Security=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer OutputDir Entities  -ContextDir DataContext -Context ShopCartContext -force -verbose -tables tablenames
+
+
+
+
+When we are using any other server
+Scaffold-DbContext "server=65.0.103.235;database=Demo18Dec;User ID=sa;password=Prutech@2023;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

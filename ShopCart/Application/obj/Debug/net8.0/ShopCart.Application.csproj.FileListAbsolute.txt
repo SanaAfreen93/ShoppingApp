@@ -1,0 +1,17 @@
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Application.deps.json
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Application.dll
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Application.pdb
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.AssemblyInfoInputs.cache
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.AssemblyInfo.cs
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.csproj.CoreCompileInputs.cache
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.dll
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\refint\ShopCart.Application.dll
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.pdb
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ref\ShopCart.Application.dll
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Application.runtimeconfig.json
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.csproj.AssemblyReference.cache
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.genruntimeconfig.cache
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Domain.dll
+D:\.net\Projects\ShopCart\Application\bin\Debug\net8.0\ShopCart.Domain.pdb
+D:\.net\Projects\ShopCart\Application\obj\Debug\net8.0\ShopCart.Application.csproj.CopyComplete
