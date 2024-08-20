@@ -9,7 +9,7 @@ public partial class Permission
 
     public int ModuleId { get; set; }
 
-    public int UserRoleMappingId { get; set; }
+    public int RoleId { get; set; }
 
-    public virtual UserRoleMapping UserRoleMapping { get; set; } = null!;
+    public virtual Role Role { get; set; } = null!;
 }

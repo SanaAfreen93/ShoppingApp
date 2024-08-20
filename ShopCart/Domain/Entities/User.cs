@@ -15,5 +15,7 @@ public partial class User
 
     public string? Mobile { get; set; }
 
+    public int? Status { get; set; }
+
     public virtual ICollection<UserRoleMapping> UserRoleMappings { get; set; } = new List<UserRoleMapping>();
 }

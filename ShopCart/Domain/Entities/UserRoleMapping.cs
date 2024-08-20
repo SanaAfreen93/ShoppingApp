@@ -11,8 +11,6 @@ public partial class UserRoleMapping
 
     public int UserId { get; set; }
 
-    public virtual ICollection<Permission> Permissions { get; set; } = new List<Permission>();
-
     public virtual Role Role { get; set; } = null!;
 
     public virtual User User { get; set; } = null!;

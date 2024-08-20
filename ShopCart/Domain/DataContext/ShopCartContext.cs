@@ -40,10 +40,10 @@ public partial class ShopCartContext : DbContext
 
             entity.Property(e => e.ModuleId).HasColumnName("moduleId");
 
-            entity.HasOne(d => d.UserRoleMapping).WithMany(p => p.Permissions)
-                .HasForeignKey(d => d.UserRoleMappingId)
+            entity.HasOne(d => d.Role).WithMany(p => p.Permissions)
+                .HasForeignKey(d => d.RoleId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Permission_UserRoleMapping");
+                .HasConstraintName("FK_Permission_Role");
         });
 
         modelBuilder.Entity<RfModule>(entity =>
@@ -71,7 +71,9 @@ public partial class ShopCartContext : DbContext
         {
             entity.ToTable("Role");
 
-            entity.Property(e => e.RoleName).HasMaxLength(50);
+            entity.Property(e => e.RoleName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
         });
 
         modelBuilder.Entity<User>(entity =>
@@ -80,12 +82,10 @@ public partial class ShopCartContext : DbContext
 
             entity.Property(e => e.Email)
                 .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("email");
+                .IsUnicode(false);
             entity.Property(e => e.Mobile)
                 .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("mobile");
+                .IsUnicode(false);
             entity.Property(e => e.Password)
                 .HasMaxLength(50)
                 .IsUnicode(false);

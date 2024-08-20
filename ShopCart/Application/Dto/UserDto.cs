@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopCart.Application.Dto
 {
-    public  class UserDto
+    public  class UserDto 
     {
         public int UserId { get; set; }
 
@@ -17,5 +17,9 @@ namespace ShopCart.Application.Dto
         public string Email { get; set; } = null!;
 
         public string? Mobile { get; set; }
+
+        public int ? Status { get; set; }
+
+        public int RoleTypeId { get; set; }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj": {}
+    "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj": {}
   },
   "projects": {
-    "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
+    "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj",
+        "projectUniqueName": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj",
         "projectName": "ShopCart.Domain",
-        "projectPath": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj",
+        "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj",
         "packagesPath": "C:\\Users\\91970\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\Projects\\ShopCart\\Domain\\obj\\",
+        "outputPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91970\\AppData\\Roaming\\NuGet\\NuGet.Config",

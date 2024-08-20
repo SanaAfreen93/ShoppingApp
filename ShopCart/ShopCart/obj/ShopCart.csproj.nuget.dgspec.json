@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\Projects\\ShopCart\\ShopCart\\ShopCart.csproj": {}
+    "D:\\.net\\ShoppingApp\\ShopCart\\ShopCart\\ShopCart.csproj": {}
   },
   "projects": {
-    "D:\\.net\\Projects\\ShopCart\\Application\\ShopCart.Application.csproj": {
+    "D:\\.net\\ShoppingApp\\ShopCart\\Application\\ShopCart.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\Projects\\ShopCart\\Application\\ShopCart.Application.csproj",
+        "projectUniqueName": "D:\\.net\\ShoppingApp\\ShopCart\\Application\\ShopCart.Application.csproj",
         "projectName": "ShopCart.Application",
-        "projectPath": "D:\\.net\\Projects\\ShopCart\\Application\\ShopCart.Application.csproj",
+        "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Application\\ShopCart.Application.csproj",
         "packagesPath": "C:\\Users\\91970\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\Projects\\ShopCart\\Application\\obj\\",
+        "outputPath": "D:\\.net\\ShoppingApp\\ShopCart\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91970\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
-                "projectPath": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj"
+              "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
+                "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
+    "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj",
+        "projectUniqueName": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj",
         "projectName": "ShopCart.Domain",
-        "projectPath": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj",
+        "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj",
         "packagesPath": "C:\\Users\\91970\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\Projects\\ShopCart\\Domain\\obj\\",
+        "outputPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91970\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,14 +164,14 @@
         }
       }
     },
-    "D:\\.net\\Projects\\ShopCart\\ShopCart\\ShopCart.csproj": {
+    "D:\\.net\\ShoppingApp\\ShopCart\\ShopCart\\ShopCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\Projects\\ShopCart\\ShopCart\\ShopCart.csproj",
+        "projectUniqueName": "D:\\.net\\ShoppingApp\\ShopCart\\ShopCart\\ShopCart.csproj",
         "projectName": "ShopCart",
-        "projectPath": "D:\\.net\\Projects\\ShopCart\\ShopCart\\ShopCart.csproj",
+        "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\ShopCart\\ShopCart.csproj",
         "packagesPath": "C:\\Users\\91970\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\Projects\\ShopCart\\ShopCart\\obj\\",
+        "outputPath": "D:\\.net\\ShoppingApp\\ShopCart\\ShopCart\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91970\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -188,11 +188,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.net\\Projects\\ShopCart\\Application\\ShopCart.Application.csproj": {
-                "projectPath": "D:\\.net\\Projects\\ShopCart\\Application\\ShopCart.Application.csproj"
+              "D:\\.net\\ShoppingApp\\ShopCart\\Application\\ShopCart.Application.csproj": {
+                "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Application\\ShopCart.Application.csproj"
               },
-              "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
-                "projectPath": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj"
+              "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj": {
+                "projectPath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj"
               }
             }
           }

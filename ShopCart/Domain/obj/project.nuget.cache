@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pTnZJZPmLGiZLvCzERve7zNGjZ0Ckov2JfO1nbnciDksqwZ/XkybIWFpM0paODobj8hiyNdtwX7jwsSbj/fUog==",
+  "dgSpecHash": "MjM6TswrBkqcsy/aeJTgAzPhXh11Iwgvi5QiffbmPZk4UGMc2ZmGTjXNsReMkhXxJ10546HoyTFZsd5eUS7h6A==",
   "success": true,
-  "projectFilePath": "D:\\.net\\Projects\\ShopCart\\Domain\\ShopCart.Domain.csproj",
+  "projectFilePath": "D:\\.net\\ShoppingApp\\ShopCart\\Domain\\ShopCart.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\91970\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\91970\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

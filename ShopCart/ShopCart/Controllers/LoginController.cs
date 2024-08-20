@@ -26,5 +26,13 @@ namespace ShopCart.Controllers
                     return Ok(Data);
 
         }
+
+        [HttpPost("createuser")]
+        public IActionResult CreateUser(UserDto users)
+        {
+            var Data = _loginInterface.SaveUserDetails(users);
+            return Ok(Data);
+
+        }
     }
 }

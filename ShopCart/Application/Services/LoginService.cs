@@ -56,6 +56,46 @@ namespace ShopCart.Application.Services
             }
         }
 
+        public async  Task<ResponseBase<UserDto>> SaveUserDetails(UserDto users)
+        {
+            try
+            {
+                var userDetails = (new UserDto
+                {
+                    UserName = users.UserName,
+                    Email = users.Email,
+                    Password = users.Password,
+                    Mobile = users.Mobile,
+                    Status = 1,
 
+                });
+
+                _dbContext.Add(userDetails);
+
+                var roleDetails = (new RoleDto
+                {
+                    RoleType = users.RoleTypeId
+
+                });
+                _dbContext.Add(roleDetails);
+
+                var UserRoleMappingDetails = (new UserRoleMappingDto
+                {
+                    RoleId = roleDetails.RoleId,
+                    UserId = userDetails.UserId,
+                });
+                _dbContext.Add(UserRoleMappingDetails);
+
+                await _dbContext.SaveChangesAsync();
+
+                return new ResponseBase<UserDto> { IsRequestSucessful = true, Value = new UserDto() { UserId = userDetails.UserId } };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseBase<UserDto> { IsRequestSucessful = false,Error = ex.Message };
+            }
+
+          
+        }
     }
 }
