@@ -28,10 +28,10 @@ namespace ShopCart.Controllers
         }
 
         [HttpPost("createuser")]
-        public IActionResult CreateUser(UserDto users)
+        public async  Task<IActionResult> CreateUser(UserDto users)
         {
-            var Data = _loginInterface.SaveUserDetails(users);
-            return Ok(Data);
+            var Data = await _loginInterface.SaveUserDetails(users);
+            return   Ok(Data);
 
         }
     }

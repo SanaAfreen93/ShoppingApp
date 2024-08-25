@@ -2,6 +2,7 @@
 using ShopCart.Application.Dto;
 using ShopCart.Application.Interface;
 using ShopCart.Domain.DataContext;
+using ShopCart.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -23,7 +24,7 @@ namespace ShopCart.Application.Services
             _dbContext = dbContext;
         }
 
-        public  String login(UserDto model)
+        public  string login(UserDto model)
         {
             try
             {
@@ -60,7 +61,7 @@ namespace ShopCart.Application.Services
         {
             try
             {
-                var userDetails = (new UserDto
+                var userDetails = (new User
                 {
                     UserName = users.UserName,
                     Email = users.Email,
@@ -70,18 +71,12 @@ namespace ShopCart.Application.Services
 
                 });
 
-                _dbContext.Add(userDetails);
+                _dbContext.Users.Add(userDetails);
+                await _dbContext.SaveChangesAsync();
 
-                var roleDetails = (new RoleDto
+                var UserRoleMappingDetails = (new UserRoleMapping
                 {
-                    RoleType = users.RoleTypeId
-
-                });
-                _dbContext.Add(roleDetails);
-
-                var UserRoleMappingDetails = (new UserRoleMappingDto
-                {
-                    RoleId = roleDetails.RoleId,
+                    RoleId = users.RoleTypeId,
                     UserId = userDetails.UserId,
                 });
                 _dbContext.Add(UserRoleMappingDetails);

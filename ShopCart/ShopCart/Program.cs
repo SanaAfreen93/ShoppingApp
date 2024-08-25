@@ -12,9 +12,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddDbContext<ShopCartContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+
+builder.Services.AddScoped<ILoginInterface, LoginService>();
+//builder.Services.AddDbContextPool<ShopCartContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContextPool<ShopCartContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+
 //Services
 builder.Services.AddSwaggerGen();
 
@@ -67,8 +72,7 @@ builder.Services.AddSwaggerGen(opt =>
         }
     });
 });
-builder.Services.AddTransient<ILoginInterface, LoginService>();
-builder.Services.AddDbContext<ShopCartContext>();
+
 
 
 var app = builder.Build();
