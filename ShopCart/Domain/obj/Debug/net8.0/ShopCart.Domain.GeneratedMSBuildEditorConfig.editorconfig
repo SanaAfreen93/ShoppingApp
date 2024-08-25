@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShopCart.Domain
-build_property.ProjectDir = D:\.net\ShoppingApp\ShopCart\Domain\
+build_property.ProjectDir = D:\Other Doc\shopapi\ShopCart\Domain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
