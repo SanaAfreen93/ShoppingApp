@@ -10,7 +10,16 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "MyAllowSpecificOrigins",
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:5081/"
+                                              ).AllowAnyHeader()
+                                                  .AllowAnyMethod().AllowAnyOrigin();
+                      });
+});
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ShopCartContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
@@ -71,6 +80,8 @@ builder.Services.AddSwaggerGen(opt =>
             new string[]{}
         }
     });
+
+  
 });
 
 
@@ -83,6 +94,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("MyAllowSpecificOrigins");
 
 app.UseAuthorization();
 
