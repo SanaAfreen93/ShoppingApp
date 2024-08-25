@@ -24,12 +24,12 @@ namespace ShopCart.Application.Services
             _dbContext = dbContext;
         }
 
-        public  string login(UserDto model)
+        public  async  Task<LoginDto>  login(UserDto model)
         {
             try
             {
                 var data  = _dbContext.Users.Where(x => x.UserName == model.UserName).FirstOrDefault();
-                if (model.UserName == data.UserName && model.Password == data.Password)
+                if (model.UserName.Trim() == data.UserName.Trim() && model.Password.Trim() == data.Password.Trim())
                 {
                     // Ensure the secret key is at least 256 bits (32 characters for UTF-8 encoding)
                     var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("yourSuperSecretKeyThatIsAtLeast32CharsLong"));
@@ -44,16 +44,17 @@ namespace ShopCart.Application.Services
                     );
 
                     var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
-                    return tokenString;
+                    return new LoginDto { IsRequestSucessful = true , accesstoken = tokenString, message ="Login Successfully" };
                 }
                 else
                 {
-                    return "Unable to generate token. Please check your credentials.";
+                    return new LoginDto { IsRequestSucessful = true , message = "Unable to generate token. Please check your credentials." };
                 }
             }
             catch (Exception ex)
             {
-                return ex.ToString();
+                return new LoginDto { IsRequestSucessful = false, message = ex.ToString()
+            };
             }
         }
 

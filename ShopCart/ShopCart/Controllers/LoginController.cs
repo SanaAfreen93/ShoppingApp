@@ -20,7 +20,7 @@ namespace ShopCart.Controllers
         }
 
        [HttpPost("login")]
-       public IActionResult Login(UserDto users)
+       public async Task<IActionResult> Login(UserDto users)
        {
             var Data = _loginInterface.login(users);
                     return Ok(Data);

@@ -10,7 +10,7 @@ namespace ShopCart.Application.Interface
     public  interface ILoginInterface
     {
 
-        public string login(UserDto user);
+        public Task<LoginDto> login(UserDto user);
         public Task<ResponseBase<UserDto>> SaveUserDetails(UserDto users);
     }
 }
